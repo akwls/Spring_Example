@@ -24,6 +24,23 @@
 	                    	<constructor-arg value="55.55" type="double" index="1" />
 	                    	<constructor-arg value="spring5" type="java.lang.String" index="2" />
 	                    </bean>
+	                    
+	                    
+	                    <!-- 객체를 매개변수로 넘기기 -->
+	                    <bean id="t6" class="kr.hs.study.beans.TestBean2">
+	                    	<constructor-arg>
+	                    		<bean class="kr.hs.study.beans.DataBean" />
+	                    	</constructor-arg>
+	                    	<constructor-arg>
+	                    		<bean class="kr.hs.study.beans.DataBean" />
+	                    	</constructor-arg>
+	                    </bean>
+	                    
+	                    <bean id="d1" class="kr.hs.study.beans.DataBean" scope="prototype"/>
+	                    <bean id="t7" class="kr.hs.study.beans.TestBean2">
+	                    	<constructor-arg ref="d1" />
+	                    	<constructor-arg ref="d1" />
+	                    </bean>
 	                
 	                    
 </beans>

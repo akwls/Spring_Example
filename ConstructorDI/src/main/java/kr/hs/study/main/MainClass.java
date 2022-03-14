@@ -3,6 +3,7 @@ package kr.hs.study.main;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import kr.hs.study.beans.TestBean;
+import kr.hs.study.beans.TestBean2;
 
 public class MainClass {
 
@@ -36,6 +37,23 @@ public class MainClass {
 		TestBean obj5 = ctx.getBean("t5", TestBean.class);
 		System.out.println("obj5 : " + obj5);
 		obj5.print();
+		
+		System.out.println("========================");
+		
+		
+		
+		
+		
+		TestBean2 obj6 = ctx.getBean("t6", TestBean2.class);
+		System.out.println("obj6 : " + obj6);
+		obj6.print();
+		
+		System.out.println("========================");
+		
+		TestBean2 obj7 = ctx.getBean("t7", TestBean2.class);
+		System.out.println("obj7 : " + obj7);
+		obj7.print();
+		
 		
 		ctx.close();
 
