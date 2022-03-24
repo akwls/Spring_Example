@@ -9,8 +9,17 @@
 	                    http://www.springframework.org/schema/context/spring-context.xsd
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
-	                    <bean id="emp1" class="kr.hs.study.beans.Designer" />
-	                    <bean id="emp2" class="kr.hs.study.beans.Developer" />
-	                    <bean id="emp3" class="kr.hs.study.beans.Publisher" />
+	                    <bean id="emp1" class="kr.hs.study.beans.Designer">
+	                    	<constructor-arg name="checkin" value="7"/>
+	                    	<constructor-arg name="checkout" value="10"/>
+	                    </bean>
+	                    <bean id="emp2" class="kr.hs.study.beans.Developer">
+	                    	<constructor-arg name="checkin" value="10"/>
+	                    	<constructor-arg name="checkout" value="7"/>
+	                    </bean>
+	                    <bean id="emp3" class="kr.hs.study.beans.Publisher">
+	                    	<constructor-arg name="checkin" value="11"/>
+	                    	<constructor-arg name="checkout" value="6"/>
+	                    </bean>
 	                   
 </beans>
