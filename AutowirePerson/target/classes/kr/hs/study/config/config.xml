@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	                    <context:annotation-config />
+	                    <bean id="p1" class="kr.hs.study.beans.Person">
+	                    	<constructor-arg name="name" value="kim"/>
+	                    	<constructor-arg name="age" value="30"/>
+	                    	<constructor-arg name="message" value="밥먹다"/>
+	                    </bean>
+	                    <bean id="p2" class="kr.hs.study.beans.Person">
+	                    	<constructor-arg name="name" value="lee"/>
+	                    	<constructor-arg name="age" value="20"/>
+	                    	<constructor-arg name="message" value="과자먹다"/>
+	                    </bean>
+	                    <bean id="p3" class="kr.hs.study.beans.Person">
+	                    	<constructor-arg name="name" value="park"/>
+	                    	<constructor-arg name="age" value="40"/>
+	                    	<constructor-arg name="message" value="물먹다"/>
+	                    </bean>
+	                    <bean id="t1" class="kr.hs.study.beans.Test" />
+	                    
+</beans> 
