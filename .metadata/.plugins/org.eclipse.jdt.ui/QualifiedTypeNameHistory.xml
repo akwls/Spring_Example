@@ -19,9 +19,7 @@
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean3"/>
     <fullyQualifiedTypeName name="java.lang.invoke.MethodHandles.Lookup.ClassOption"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean2"/>
-    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Employee"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Designer"/>
@@ -40,4 +38,6 @@
     <fullyQualifiedTypeName name="kr.hs.study.config.BeanConfigClass"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.Test"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
 </qualifiedTypeNameHistroy>

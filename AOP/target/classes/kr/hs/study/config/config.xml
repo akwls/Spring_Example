@@ -17,9 +17,19 @@
 	                    		<!--  return 타입에 관계없이 모든 패키지, 모든 클래스에 있는 method1()을 지정 -->
 	                    		
 	                    		<!--  <aop:before method="beforeMethod" pointcut-ref="point" /> --> 
-	                    		<!-- method1이 실행되기 전에 beforeMethod가 먼저 실행된다. -->
+	                    		<!-- method1이 실행되기 전에 beforeMethod가 먼저 실행됨. -->
 	                    		
-	                    		<aop:after method="afterMethod" pointcut-ref="point"/>
+	                    		<!-- <aop:after method="afterMethod" pointcut-ref="point"/>  -->
+	                    		<!-- method1이 실행되고 난 후 afterMethod 실행됨. -->
+	                    		
+	                    		<!-- <aop:around method="aroundMethod" pointcut-ref="point"/> -->
+	                    		<!-- method1이 실행 전, 후 모두 aroundMethod 실행됨. -->
+	                    		
+	                    		<!-- <aop:after-returning method="afterReturning" pointcut-ref="point"/> -->
+	                    		<!-- method1이 오류 없이 종료 된 후 afterReturing 실행됨. -->
+	                    		
+	                    		<aop:after-throwing method="afterThrowing" pointcut-ref="point" throwing="e" />
+	                    		<!-- method1이 예외 발생 시, afterThrowing 실행됨. -->
 	                    	</aop:aspect>
 	                    </aop:config>
 </beans> 

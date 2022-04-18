@@ -12,6 +12,7 @@ public class MainClass {
 		
 		TestBean1 obj1 = ctx.getBean("t1", TestBean1.class);
 		obj1.method1();
+		System.out.println("=====================");
 		obj1.method2();
 		
 		ctx.close();
