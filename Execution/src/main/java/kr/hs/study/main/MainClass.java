@@ -11,7 +11,9 @@ public class MainClass {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("kr/hs/study/config/config.xml");
 		
 		TestBean1 obj1 = ctx.getBean("t1", TestBean1.class);
-		obj1.method1(10, 20);
+		obj1.method1(10, "spring");
+		obj1.method1(10, 10);
+		obj1.method1(1,2,3);
 		System.out.println("=======================");
 		obj1.method2();
 		
