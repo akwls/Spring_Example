@@ -40,6 +40,8 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
     <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
-    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
     <fullyQualifiedTypeName name="kr.hs.study.beans.TestBean1"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.IPrintMsg"/>
+    <fullyQualifiedTypeName name="kr.hs.study.beans.PrintMsg"/>
 </qualifiedTypeNameHistroy>
