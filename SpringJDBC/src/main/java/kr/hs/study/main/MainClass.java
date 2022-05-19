@@ -13,21 +13,30 @@ public class MainClass {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(BeanConfigClass.class);
 		
 		TestDAO dao = ctx.getBean(TestDAO.class);
+//		
+//		TestBean t1 = ctx.getBean(TestBean.class);
+//		t1.setData1(10);
+//		t1.setData2("spring");
+//		
+//		dao.insert_data(t1);
+//		
+//		TestBean t2 = ctx.getBean(TestBean.class);
+//		
+//		t2.setData1(20);
+//		t2.setData2("spring2");
+//		
+//		dao.insert_data(t2);
+//		
+//		System.out.println("inserted!!");
 		
-		TestBean t1 = ctx.getBean(TestBean.class);
-		t1.setData1(10);
-		t1.setData2("spring");
+		TestBean t3 = ctx.getBean(TestBean.class);
+		t3.setData1(10);
+		t3.setData2("spring1010");
+		dao.update_data(t3);
+		System.out.println("updated!!");
 		
-		dao.insert_data(t1);
-		
-		TestBean t2 = ctx.getBean(TestBean.class);
-		
-		t2.setData1(20);
-		t2.setData2("spring2");
-		
-		dao.insert_data(t2);
-		
-		System.out.println("inserted!!");
+		dao.delete_data(20);
+		System.out.println("deleted!!");
 		
 		ctx.close();
 
