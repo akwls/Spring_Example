@@ -1,5 +1,7 @@
 package kr.hs.study.main;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import kr.hs.study.beans.TestBean;
@@ -29,14 +31,20 @@ public class MainClass {
 //		
 //		System.out.println("inserted!!");
 		
-		TestBean t3 = ctx.getBean(TestBean.class);
-		t3.setData1(10);
-		t3.setData2("spring1010");
-		dao.update_data(t3);
-		System.out.println("updated!!");
+//		TestBean t3 = ctx.getBean(TestBean.class);
+//		t3.setData1(10);
+//		t3.setData2("spring1010");
+//		dao.update_data(t3);
+//		System.out.println("updated!!");
+//		
+//		dao.delete_data(20);
+//		System.out.println("deleted!!");
 		
-		dao.delete_data(20);
-		System.out.println("deleted!!");
+		List<TestBean> list = dao.select_data();
+		for(TestBean data : list) {
+			System.out.println("data1 : " + data.getData1());
+			System.out.println("data2 : " + data.getData2());
+		}
 		
 		ctx.close();
 
